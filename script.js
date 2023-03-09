@@ -1,6 +1,6 @@
 const taskInput = document.querySelector("#newtask input");
 const taskSection = document.querySelector(".tasks");
-console.log(taskInput);
+
 taskInput.addEventListener("keyup", (e) => {
     if (e.key == "Enter") { createTask(); }
 }
