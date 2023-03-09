@@ -5,3 +5,41 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    height: 100vh;
+    background: #0F62FE;
+}
+#head-text{
+    margin-top: 50px;
+    margin-left: 10px;
+    font-family: sans-serif;
+    color: #0F62FE;
+}
+.container{
+    width: 40%;
+    top: 30%;
+    left: 50%;
+    background: white;
+    border-radius: 1px;
+    min-width: 450px;
+    position: absolute;
+    min-height: 100px;
+    transform: translate(-50%,-50);
+
+}
+
+.tasks.overflow{
+overflow-y: auto;
+max-height: 300px;
+}
+.tasks::-webkit-scrollbar{
+    width: 10px;
+}
+.tasks::-webkit-scrollbar-track{
+    background: #BAE6FF;
+    border-radius: 25px;
+}
+.tasks::-webkit-scrollbar-thumb{
+    background: #0D75EC;
+    border-radius: 25px;
+}
