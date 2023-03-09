@@ -1,6 +1,6 @@
 const taskInput = document.querySelector("#newtask input");
 const taskSection = document.querySelector(".tasks");
-
+console.log(taskInput);
 taskInput.addEventListener("keyup", (e) => {
     if (e.key == "Enter") { createTask(); }
 }
@@ -8,7 +8,7 @@ taskInput.addEventListener("keyup", (e) => {
 
 
 function createTask() {
-    if (taskInput.ariaValueMax.length == 0) {
+    if (taskInput.value.length == 0) {
         alert("The task field is bank. Enter a task name and try again")
 
     } else {
@@ -16,7 +16,7 @@ function createTask() {
             `
 <div class="task">
 <label id="taskname">
-<input onclick="updateTask(this) type="checkbox" id=check-task">
+<input onclick="updateTask(this)" type="checkbox" id="check-task">
 <p>${document.querySelector('#newtask input').value}</p>
 </label>
 <div class="delete">
